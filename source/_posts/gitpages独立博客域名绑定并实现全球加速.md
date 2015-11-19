@@ -1,5 +1,7 @@
 title: gitpages独立博客域名绑定并实现全球加速
 date: 2015-11-06 11:16:52
+timestamp: 1446779812
+catAlias: site
 categories: 建站
 tags: 建站
 keywords: 建站，域名绑定

@@ -15,8 +15,8 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://shuoit.net
 root: /
-permalink: :year/:month/:day/:_id/
-permalink_defaults: http://shuoit.net
+permalink: :catAlias/:timestamp.html
+permalink_defaults:
 
 # Directory
 source_dir: source

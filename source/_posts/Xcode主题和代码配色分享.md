@@ -1,5 +1,7 @@
 title: Xcode主题和代码配色分享
 date: 2015-11-12 10:30:15
+timestamp: 1447295415
+catAlias: tools
 categories: 工具
 tags: 工具,xcode
 keywords: xcode工具,xcode使用技巧

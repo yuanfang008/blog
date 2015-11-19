@@ -1,5 +1,7 @@
 title: 一条命令延长Reveal试用期
 date: 2015-10-28 22:01:31
+timestamp: 1446040891
+catAlias: tools
 categories: 工具
 tags: Reveal,工具
 keywords: Reveal,工具

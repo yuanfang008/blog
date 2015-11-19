@@ -1,5 +1,7 @@
 title: OSX学习笔记第一章
 date: 2015-10-23 22:25:30
+timestamp: 1445610330
+catAlias: OSX
 categories: OS X
 tags: OS X
 keywords: OS X

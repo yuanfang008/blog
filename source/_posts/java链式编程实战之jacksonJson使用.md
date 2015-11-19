@@ -1,5 +1,7 @@
 title: java链式编程实战之jacksonJson使用
 date: 2015-11-04 18:50:18
+timestamp: 1446634218
+catAlias: server
 categories: 后台
 tags: java,后台
 keywords: java,链式编程,后台开发

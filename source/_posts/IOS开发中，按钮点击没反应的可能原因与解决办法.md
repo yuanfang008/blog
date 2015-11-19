@@ -1,5 +1,7 @@
 title: IOS开发中，按钮点击没反应的可能原因与解决办法
 date: 2015-10-23 22:16:20
+timestamp: 1445609780
+catAlias: iOS
 categories: iOS
 tags: iOS
 keywords: iOS,iOS开发笔记

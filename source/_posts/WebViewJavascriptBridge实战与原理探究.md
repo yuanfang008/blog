@@ -1,5 +1,7 @@
 title: WebViewJavascriptBridge实战与原理探究
 date: 2015-11-18 16:25:11
+timestamp: 1447835111
+catAlias: iOS
 categories: iOS
 tags: iOS, WebViewJavascriptBridge
 keywords: OS, WebViewJavascriptBridge
@@ -13,9 +15,9 @@ description: 本文将讲诉WebViewJavascriptBridge实战与原理探究。告�
 ![WebViewJavascriptBridge-JS-Coding](http://i5.tietuku.com/a1582b160d0e4147.png)
 
 #### 以上分别展示了OC与JS中使用`WebViewJavascriptBridge`的方法。但请注意：`网页中其实不需要再引入其他的JS库`
-	
+
 	PS：鄙人之前协助前端开发这块时，就把他带错路 :)
-	
+
 #### 下边来扒拉一下该框架源码，研究下其大概的原理，看看为什么网页不需要引入另外的JS库就可以调用JS方法
 
 ![WebViewJavascriptBridge-OBJC-SRC](http://i5.tietuku.com/c47a7f0a662280dc.png)

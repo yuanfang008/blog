@@ -1,4 +1,6 @@
 title: 博客，你好！我们又见面了
+timestamp: 1446607100
+catAlias: site
 categories: 建站
 tags: 建站
 keywords: 博客，程序员博客

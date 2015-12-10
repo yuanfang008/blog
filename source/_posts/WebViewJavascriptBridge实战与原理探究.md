@@ -14,12 +14,12 @@ description: 本文将讲诉WebViewJavascriptBridge实战与原理探究。告�
 ![WebViewJavascriptBridge-OC-Coding](http://i5.tietuku.com/1ffc6b019c986226.png)
 ![WebViewJavascriptBridge-JS-Coding](http://i5.tietuku.com/a1582b160d0e4147.png)
 
-#### 以上分别展示了OC与JS中使用`WebViewJavascriptBridge`的方法。但请注意：`网页中其实不需要再引入其他的JS库`
-
-	PS：鄙人之前协助前端开发这块时，就把他带错路 :)
-
 #### 下边来扒拉一下该框架源码，研究下其大概的原理，看看为什么网页不需要引入另外的JS库就可以调用JS方法
 
 ![WebViewJavascriptBridge-OBJC-SRC](http://i5.tietuku.com/c47a7f0a662280dc.png)
 
 #### 你看到了，OC的源码中其实已经引入这个JS库了，所以网页中不需要再引入。而该框架本身，我猜也是基于`JavaScriptCore `封装实现的。
+
+#### 以上分别展示了OC与JS中使用`WebViewJavascriptBridge`的方法。但请注意：`网页中其实不需要再引入其他的JS库`
+
+	PS：鄙人之前协助前端开发这块时，就把他带错路 :)

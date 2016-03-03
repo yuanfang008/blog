@@ -71,9 +71,6 @@ theme: hexo-theme-ttstyle
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-- type:	git
-  repo:	https://gitcafe.com/shuoit/shuoit.git
-  branch: gitcafe-pages
 - type: git
   repo: https://tangkunyin@github.com/shuoit/shuoit.github.com.git
   branch: master
@@ -81,7 +78,6 @@ deploy:
 # Backup settings see:https://github.com/coneycode/hexo-git-backup
 backup:
   type: git
-  message: backup my blog
+  message: backup my website blog
   repository:
     github: https://github.com/shuoit/blog.git,master
-    gitcafe: https://gitcafe.com/shuoit/blog.git,master

@@ -73,7 +73,7 @@ theme: hexo-theme-ttstyle
 deploy:
 - type: git
   repo: https://git.coding.net/shuoit/shuoit.git
-  branch: master
+  branch: coding-pages
 - type: git
   repo: https://tangkunyin@github.com/shuoit/shuoit.github.com.git
   branch: master

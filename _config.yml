@@ -72,6 +72,9 @@ theme: hexo-theme-ttstyle
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
 - type: git
+  repo: https://git.coding.net/shuoit/shuoit.git
+  branch: master
+- type: git
   repo: https://tangkunyin@github.com/shuoit/shuoit.github.com.git
   branch: master
 
@@ -80,4 +83,5 @@ backup:
   type: git
   message: backup my website blog
   repository:
+    coding: https://git.coding.net/shuoit/blog.git,master
     github: https://github.com/shuoit/blog.git,master

@@ -1,0 +1,9 @@
+{
+  "name": "hexo-site",
+  "version": "3.2.2",
+  "private": true,
+  "dependencies": {
+    "hexo-renderer-ejs": "^0.2.0",
+    "hexo-renderer-marked": "^0.2.11"
+  }
+}

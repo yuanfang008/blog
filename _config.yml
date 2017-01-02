@@ -7,15 +7,15 @@ title: 说IT
 subtitle: 关注技术和人文的原创IT博客
 keywords: 说IT，技术博客，原创IT博客
 description: 说IT，是一个聚焦于技术和人文的原创IT博客。它将记录主流IT技术教程、开发笔记和心得，内容涉及iOS、OS X、Java等领域，网址：shuoit.net，作者：唐坤银(kunyintang)。
-author: 唐坤银
+author: 唐坤银(http://www.tangkunyin.com)
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://shuoit.net
+url: https://shuoit.net
 root: /
-permalink: :catAlias/:timestamp.html
+permalink: :category/:timestamp.html
 permalink_defaults:
 
 # Directory
@@ -30,8 +30,8 @@ skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
-default_layout: article
-titlecase: false # Transform title into titlecase
+default_layout: post
+titlecase: true # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0s
 render_drafts: false
@@ -66,7 +66,7 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
 
 
-theme: hexo-theme-ttstyle
+theme: hexo-theme-simple
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

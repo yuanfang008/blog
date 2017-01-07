@@ -15,8 +15,9 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://shuoit.net
 root: /
-permalink: :category/:timestamp.html
+permalink: :category/:title.html
 permalink_defaults:
+  lang: en
 
 # Directory
 source_dir: source
@@ -45,9 +46,16 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: 开发笔记
 category_map:
+  开发笔记: devNotes
+  站长专栏: webmaster
 tag_map:
+  iOS: iOS
+  ReactNative: RN
+  跨平台: CrossPlatform
+  博客: blog
+
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

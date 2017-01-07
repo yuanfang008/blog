@@ -19,9 +19,6 @@
 <div class="row-fluid">
     <div class="recommended">
         <%- partial('_partial/middleNav') %>
-
-        <% console.log(JSON.stringify(site.posts)) %>
-
         <div class="span7 offset3">
             <div class="page-title" style="width: 957px;">
                 <!-- 分类和搜索 -->
@@ -57,11 +54,12 @@
                 <ul class="article-list thumbnails">
                     <% site.categories.each(function(category){ %>
                     <% category.posts.each(function(post){ %>
+
                     <li class="<%= (post.photos && post.photos.length) ? 'have-img' : '' %>">
                         <!-- 有配图默认渲染第一张 -->
                         <% if (post.photos && post.photos.length){%>
                         <a class="wrap-img" href="<%- url_for(post.path) %>">
-                            <img src="<%- url_for(post.photos[0]) %>" alt="300">
+                            <img src="<%= post.photos[0] %>" alt="<%= post.title %>">
                         </a>
                         <%}%>
                         <div>

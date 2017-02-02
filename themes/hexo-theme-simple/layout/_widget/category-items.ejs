@@ -1,0 +1,25 @@
+<% var external_link = config.external_link ? '' : '';%>
+<article class="post">
+    <!-- 有配图默认渲染第一张 -->
+    <% if (post.photos && post.photos.length){ %>
+    <div class="post-cover">
+        <a href="<%- url_for(post.path) %>" title="<%= post.title %>" style="background-image:url(<%= post.photos[0] %>)"></a>
+    </div>
+    <% } %>
+    <div class="post-header">
+        <div class="post-meta"><a href="<%= theme.authorLink %>"><strong><%= post.author %></strong></a><em>·</em><%= date(post.date) %>
+        </div>
+        <a class="post-title" href="<%- url_for(post.path) %>" title="<%= post.title %>"><%= post.title %></a>
+        <div class="post-meta">
+            <a href="<%- url_for(post.path) %>#disqus_thread">评论：?</a>
+            <em>·</em>
+            <a href="<%- url_for(post.path) %>">阅读：?</a><em>·</em>
+            <span>喜欢：?</span>
+        </div>
+    </div>
+    <div class="post-desc">
+        <%= post.description || post.slug %>
+    </div>
+</article>
+
+

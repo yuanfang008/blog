@@ -1,103 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html class="no-js">
 <head>
-    <%- partial('_partial/header') %>
+    <%- partial('_partial/head', null, {cache: !config.relative_link}) %>
 </head>
-<body class="output fluid zh cn win reader-day-mode reader-font1" data-js-module="recommendation" data-locale="zh-CN">
-<%- partial('_partial/mobileHeader') %>
-<!-- 用户相关 -->
-<div class="navbar-user">
-    <a class="login" data-signup-link="true" data-toggle="modal" href="<%= theme.donateUrl %>">
-        <i class="fa fa-heart"></i> 献爱心
-    </a>
-    <a class="login" data-signin-link="true" data-toggle="modal" href="<%= theme.authorUrl %>">
-        <i class="fa fa-user"></i> 群英汇
-    </a> <a class="daytime set-view-mode pull-right" href="javascript:void(0)"><i class="fa fa-moon-o"></i></a>
+<body class="<%= (is_post() || is_page()) ? 'single' : '' %>">
+<%- partial('_partial/leftMenu', null, {cache: !config.relative_link}) %>
+<%- partial('_widget/user-entry', null, {cache: !config.relative_link}) %>
+<div id="wrapper" class="clearfix">
+    <%- body %>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
 </div>
-<%- partial('_partial/leftNav') %>
-<!-- 中边栏 -->
-<div class="row-fluid">
-    <div class="recommended">
-        <%- partial('_partial/middleNav') %>
-        <div class="span7 offset3">
-            <div class="page-title" style="width: 957px;">
-                <!-- 分类和搜索 -->
-                <ul class="recommened-nav navigation clearfix" data-container="#list-container" data-loader=".loader-tiny" data-user-slug="">
-                    <% site.categories.each(function(item, index){ %>
-                    <li class="<%=(index == 0) ? 'active' : 'bonus' %>">
-                        <a href="/<%= item.path %>" data-name="<%= item.name %>"><%= item.name %></a>
-                    </li>
-                    <% }); %>
-                    <img class="hide loader-tiny" src="./images/tiny.gif" alt="Tiny">
-                    <li class="search">
-                        <form class="search-form" target="_blank" action="" accept-charset="UTF-8" method="get">
-                            <input name="utf8" type="hidden" value="✓">
-                            <input type="search" name="q" id="q" placeholder="搜索" class="input-medium search-query">
-                            <span class="search_trigger" onclick="">
-                                <i class="fa fa-search"></i></span>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-            <!-- 文章列表 -->
-            <div id="list-container">
-                <!-- 标签 -->
-                <ul class="unstyled clearfix sort-nav" id="collection-categories-nav" data-js-module="collection-category">
-                    <% site.tags.each(function(item, index){ %>
-                    <li class="<%=(index == 0) ? 'active' : '' %>">
-                        <a class="category" data-dimension="now" href="javascript:void(null);"><%= item.name %></a>
-                    </li>
-                    <% }); %>
-                    <li><img class="hide loader-tiny" src="/images/tiny.gif" alt="Tiny"/></li>
-                </ul>
-
-                <ul class="article-list thumbnails">
-                    <% site.categories.each(function(category){ %>
-                    <% category.posts.each(function(post){ %>
-
-                    <li class="<%= (post.photos && post.photos.length) ? 'have-img' : '' %>">
-                        <!-- 有配图默认渲染第一张 -->
-                        <% if (post.photos && post.photos.length){%>
-                        <a class="wrap-img" href="<%- url_for(post.path) %>">
-                            <img src="<%= post.photos[0] %>" alt="<%= post.title %>">
-                        </a>
-                        <%}%>
-                        <div>
-                            <p class="list-top">
-                                <a class="author-name blue-link" target="_blank" href="<%= theme.authorUrl %>"><%=post.author %></a>
-                                <em>·</em>
-                                <span class="time" data-shared-at="<%= date(post.date) %>"><%= date(post.date) %></span>
-                            </p>
-                            <h4 class="title"><a target="_blank" href="<%- url_for(post.path) %>"><%= post.title %></a>
-                            </h4>
-                            <div class="list-footer">
-                                <a target="_blank" href="<%- url_for(post.path) %>">阅读</a> ·
-                                <a target="_blank" href="<%- url_for(post.path) %>#disqus_thread">评论</a> ·
-                                <a target="_blank" href="<%= theme.donateUrl %>">喜欢</a>
-                            </div>
-                        </div>
-                    </li>
-                    <% }); %>
-                    <% }); %>
-                </ul>
-
-                <!-- 分页开始 -->
-                <div class="load-more">
-                    <button class="ladda-button " data-style="slide-left" data-type="script" data-remote=""
-                            data-size="medium"
-                            data-url="#"
-                            data-color="maleskine"
-                            data-method="get">
-                        <span class="ladda-label">点击查看更多</span>
-                        <span class="ladda-spinner"></span></button>
-                </div>
-
-            </div>
-        </div>
-    </div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
 </div>
-
-<!-- 页脚 -->
-<%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+<script>
+    $(function(){
+        jBlog.init({
+            url:'<%= config.url %>',
+            action:'<%= config.root %>',
+            usePjax:'1',
+            current:'<%= (is_post() || is_page()) ? 'post' : 'archive' %>',
+            prefix:'_<%= config.url %>',
+            respondId:'respond-post-13',
+            donateImg:'/images/weixin_donate.png'
+        });
+    });
+</script>
 </body>
 </html>

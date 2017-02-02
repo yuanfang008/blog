@@ -1,9 +1,26 @@
-#网站首页地址
-siteUrl: https://shuoit.net
-siteName: 说IT
-siteShortName: 说
-siteSubtitle: 说人文，撸科技
-siteDescription: 关注技术与人文的原创IT博客
+# 作者信息
+avatar: /images/favicon.png
+authorLink: https://www.tangkunyin.com
+authorAbout: https://about.tangkunyin.com
+authorDesc: 一个写代码的「伪文人」
+
+# cover
+coverTitle: 说人文，撸科技
+indexCover: /images/coverImage.jpg
+
+
+# 导航菜单(顺序决定排序)
+## 此处的菜单名称为分类别名，需要与_config.yml中category_map设定的值一致
+menu:
+   开发: devNotes
+   博客: bloger
+   视角: views
+   资源: resources
+
+# 首页文章排序(-1: 最新的靠前，1: 最旧的靠前)
+homePageSortType: -1
+# 首页最新文章数量(默认5篇)
+homeArticleShown: 10
 
 
 # 社交信息
@@ -12,37 +29,26 @@ facebook: https://fackbook.com/tangkunyin
 github: https://github.com/tangkunyin
 
 # Disqus评论(由于个人喜好，仅支持disqus。多说请自行修改)
-page_comment: true
 disqus_shortname: shuoit
-
-# 网站app下载链接
-iOSDownLink: https://github.com/tangkunyin/shuoitApp
-andriodDownLink: https://github.com/tangkunyin/shuoitApp
+## 首页第一篇文章是否开启评论(禁止可提高首页打开速度)
+indexComment: false
 
 
 # 独立页链接
-aboutUrl: /about
-contactUrl: /contact
-helpUrl: /help
-othersUrl: /others
-flinks: /flinks
-rssUrl: /rss
-authorUrl: /authors
-donateUrl: /donate
-pullRequestUrl: /pullRequest
+about: /about
+contact: /contact
+help: /help
+others: /others
+links: /flinks
+feedback: /feedback
 
 # 托管服务器
 gitPagesServerAddr: https://coding.net/register?key=bcace447-fa41-4579-9783-86fdf0f723e2
 gitPagesServerName: Coding
 
-# 是否在新窗口打开链接
-openInTab: true
 
 # favicon
 favicon: /images/favicon.png
-
-#你的头像url
-avatar: /images/favicon.png
 
 
 # 统计代码请直接替换 _partial/footer.ejs 文件里的代码

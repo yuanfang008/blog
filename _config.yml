@@ -58,6 +58,8 @@ tag_map:
   ReactNative: RN
   跨平台: CrossPlatform
   网站: webmaster
+  Mac必备工具: MacTools
+  编码人生: CodingLife
 
 
 # Date / Time format
@@ -78,7 +80,6 @@ pagination_dir: page
 
 
 theme: hexo-theme-simple
-#theme: landscape
 
 
 # Deployment

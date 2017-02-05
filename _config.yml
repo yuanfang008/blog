@@ -49,19 +49,18 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: 开发
+default_category: 技术
 category_map:
-  开发: devNotes
-  博客: bloger
-  视角: views
-  资源: resources
+   技术: tech
+   人文: humanity
+   资源: resource
 tag_map:
   iOS: iOS
   ReactNative: RN
   跨平台: CrossPlatform
-  网站: webmaster
+  博客: bloger
   Mac必备工具: MacTools
-  编码人生: CodingLife
+  视角: views
 
 
 # Date / Time format
@@ -82,6 +81,7 @@ pagination_dir: page
 
 
 theme: hexo-theme-simple
+#theme: hexo-theme-hipaper
 
 
 # Deployment
@@ -97,7 +97,7 @@ deploy:
 # Backup settings see:https://github.com/coneycode/hexo-git-backup
 backup:
   type: git
-  message: backup my website blog
+  message: backup my blog of https://shuoit.net
   repository:
     coding: https://git.coding.net/shuoit/blog.git,master
     github: https://github.com/shuoit/blog.git,master

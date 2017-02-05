@@ -1,6 +1,6 @@
 title: {{ title }}
 date: {{ date }}
-categories: 开发
+categories: 技术
 tags: 
 keywords: 
 description: 

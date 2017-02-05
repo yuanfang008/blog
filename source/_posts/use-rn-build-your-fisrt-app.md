@@ -1,5 +1,5 @@
 title: 用RN开发你的第一个app
-categories: 开发
+categories: 技术
 author: 唐先森
 photos:
   - /img/2016/xcode-darkStyle.png

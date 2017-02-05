@@ -1,10 +1,10 @@
 title: 在hexo博客中打造完美的url
-categories: 博客
+categories: 技术
 author: 唐先森
 photos:
   - /img/2016/xcode-darkStyle.png
 date: 2017-01-07 22:54:05
-tags: 网站
+tags: 博客
 keywords:
 description:
 ---

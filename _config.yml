@@ -80,7 +80,7 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
 
 
-theme: hexo-theme-simple
+theme: hexo-theme-jsimple
 #theme: hexo-theme-hipaper
 
 

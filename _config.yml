@@ -8,8 +8,10 @@ subtitle: 关注技术和人文的原创IT博客
 keywords: 说IT，技术博客，原创IT博客
 description: 这是一本关于「伪文青」程序员的故事，作者：唐先森(KunyinTang)。也是一个聚焦于技术和人文的原创IT博客，网址：shuoit.net。
 author: 唐先森(https://www.tangkunyin.com)
-
 language:
+- zh-cn
+- en
+
 timezone:
 
 # URL

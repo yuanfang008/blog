@@ -103,3 +103,11 @@ backup:
   repository:
     coding: https://git.coding.net/shuoit/blog.git,master
     github: https://github.com/shuoit/blog.git,master
+
+# ------------- Third part private config in theme ----------------------
+# comment ShortName, you can choose only ONE to display.
+duoshuo_shortname: shuoit
+disqus_shortname:
+
+# CNZZ count
+cnzz_siteid: 1261190932

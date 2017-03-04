@@ -89,6 +89,7 @@ var SimpleCore = {
             SimpleCore.initPjax();
         }
 
+        SimpleCore.changeCoverModle(false);
         SimpleCore.syncSize();
         SimpleCore.setPageCurrent();
         SimpleCore.setBuildingTime();
@@ -213,11 +214,20 @@ var SimpleCore = {
         var icon = next_mode == 'day' ? 'fa fa-sun-o' : 'fa fa-moon-o';
         if (next_mode == 'day') {
             $('body').removeClass('night-mode');
+            SimpleCore.changeCoverModle(false);
         } else {
             $('body').addClass('night-mode');
+            SimpleCore.changeCoverModle(true);
         }
         btn.find('i').attr('class', icon);
         SimpleCore.setCookie('read-mode', next_mode);
+    },
+    changeCoverModle:function (isNight) {
+        if (isNight){
+            $(".cover-img").css({'background':"url('/images/cover-night.jpg')",'background-image':'/images/cover-night.jpg','background-size': 'cover','background-position': 'center','background-repeat': 'no-repeat'});
+        }else {
+            $(".cover-img").css({'background':"url('/images/cover-day.jpg')",'background-image':'/images/cover-day.jpg','background-size': 'cover','background-position': 'center','background-repeat': 'no-repeat'});
+        }
     },
     alert: function (msg, type, time) {  //提示信息
         var id = 'notice-' + (new Date().getTime());

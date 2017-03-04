@@ -1,5 +1,5 @@
 # theme dev or test model
-themeDev: false
+themeDev: true
 
 # favicon
 favicon: /images/favicon.png

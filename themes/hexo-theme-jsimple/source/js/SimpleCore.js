@@ -2,44 +2,16 @@
  * Created by tangkunyin on 2017/1/25.
  */
 var SimpleCore = {
-    url: null,	//网址
-    buildingTime: new Date(), //网站建立时间，默认当前
-    prefix: null,	//cookie前缀
-    current: null,	//当前页面类型
+    buildingTime: new Date(),
+    current: null,
     prevTop: 0,
     headerShow: true,
-    loadingShow: true,
-    usePjax: true,
     donateImg: null,
     initParams: function (params) {
-        SimpleCore.url = params.url;
         SimpleCore.buildingTime = params.buildingTime;
-        SimpleCore.usePjax = params.usePjax;
-        SimpleCore.prefix = params.prefix;
         SimpleCore.current = params.current;
         SimpleCore.donateImg = params.donateImg;
     },
-    initPjax: function () {
-        $(document).pjax('a[target!=_blank]', '#main', {fragment: '#main', timeout: 10000});
-        $(document).on('pjax:send', function (e) {
-            SimpleCore.pjaxLoading('show');
-        });
-        $(document).on('pjax:complete', function (e) {
-            SimpleCore.pjaxLoading('hide');
-            SimpleCore.pajx_loadDuodsuo();//pjax加载完成之后调用重载多说函数
-        });
-        $(document).on('pjax:end', function (e) {
-            if (!e.currentTarget || e.currentTarget.baseURI.indexOf('.html') == -1) {
-                SimpleCore.current = 'archive';
-            } else {
-                SimpleCore.current = 'post';
-            }
-            SimpleCore.changeReadModel();
-            SimpleCore.setPageCurrent();
-            SimpleCore.syncSize();
-        });
-    },
-
     //外部调用初始化
     init: function (params) {
         SimpleCore.initParams(params);
@@ -60,52 +32,19 @@ var SimpleCore = {
         $(document).on('click', '.btn-donate', function (e) {
             e.preventDefault();
             if (SimpleCore.donateImg != '') {
-                SimpleCore.alert('<h3>扫描二维码打赏</h3><img style="width:160px;background:#fff;" src="' + SimpleCore.donateImg + '">', 'success', 0);
+                SimpleCore.alert('小奖赏激发大创造','<img style="width:160px;background:#fff;" src="' + SimpleCore.donateImg + '">');
             } else {
-                SimpleCore.alert('暂未开通打赏功能');
+                SimpleCore.alert('暂未开通打赏功能','<h4 style="text-align: center;margin: 0">联系博主试试看 ：）</h4>');
             }
-        });
-        $(document).on('click', '.btn-like', function () {
-            SimpleCore.ajaxSetLike($(this));
-            return false;
         });
         $(document).on('click', '.btn-gotop', function (e) {
             e.preventDefault();
             SimpleCore.goTop();
         });
-        if (SimpleCore.usePjax) {
-            SimpleCore.initPjax();
-        }
         SimpleCore.changeReadModel();
         SimpleCore.setPageCurrent();
         SimpleCore.setBuildingTime();
         SimpleCore.syncSize();
-    },
-    pjaxLoading: function (type) {
-        var loading = $('#pjax-loading'), width = 0;
-        var progress = function () {
-            if (SimpleCore.loadingShow === true && width < $(window).width()) {
-                $('#pjax-loading').width(width).show();
-                width += 4;
-                setTimeout(function () {
-                    progress();
-                }, 10);
-            } else {
-                $('#pjax-loading').width($(window).width());
-                setTimeout(function () {
-                    $('#pjax-loading').width(0).hide();
-                }, 300);
-            }
-        }
-        if (type == 'show') {
-            if (loading.length == 0) {
-                $('<div id="pjax-loading"></div>').appendTo($('body'));
-            }
-            SimpleCore.loadingShow = true;
-            progress();
-        } else {
-            SimpleCore.loadingShow = false;
-        }
     },
     goTop: function () {
         $("html, body").animate({scrollTop: 0}, 200);
@@ -146,7 +85,6 @@ var SimpleCore = {
             if ($(window).width() < 480) {
                 $('#nav').css("top", 0);
             }
-
         } else {
             $('.page-title').css("top", -45);
             $('.nav-user').css("top", -45);
@@ -168,15 +106,6 @@ var SimpleCore = {
                 e.preventDefault();
             });
         }
-    },
-    ajaxSetLike: function (that) {		//提交like
-        var cid = that.data('cid');
-        var num = parseInt(that.find('span').text());
-        if (cid === undefined) {
-            SimpleCore.alert('请选择要点赞的文章!', type);
-            return false;
-        }
-        SimpleCore.alert('多谢支持 ：）');
     },
     switchSearch: function () {	//显示搜索
         var srh = $('#search');
@@ -215,12 +144,11 @@ var SimpleCore = {
             });
         }
     },
-    alert: function (msg, type, time) {  //提示信息
+    alert: function (title,msg) {
         var id = 'notice-' + (new Date().getTime());
-        type = type === 'error' ? 'error' : 'success';
-        time = time === undefined ? (type == 'success' ? 3000 : 5000) : time;
-        var html = '<div id="' + id + '" class="notice-item ' + type + '"><span class="notice-item-close"><i class="fa fa-close"></i></span>'
-            + '<span class="notice-item-type"><i class="fa fa-' + type + '"></i></span><p>' + msg + '</p></div>';
+        var html = '<div id="' + id + '" class="notice-item">'
+            + '<span class="notice-item-close"><i class="fa fa-close"></i></span>'
+            + '<p><h3 style="text-align: center;margin:0 0 10px 0">'+title+'</h3>' + msg + '</p></div>';
         var notice = $('#notice');
         if (notice.length == 0) {
             $('<div id="notice"></div>').appendTo($('body'));
@@ -229,13 +157,11 @@ var SimpleCore = {
             $(this).parent().remove();
             return false;
         });
-        //居中显示
+        //居中显示，于8秒后自动关闭
         $('#notice').css('margin-right', -$('#notice').width() / 2);
-        if (time != 0) {
-            setTimeout(function () {
-                $('#' + id).remove();
-            }, time);
-        }
+        setTimeout(function () {
+            $('#' + id).remove();
+        }, 8000);
     },
     setLocalData: function (key, value) {
         if (window.localStorage) {
@@ -245,20 +171,6 @@ var SimpleCore = {
     getLocalData: function (key) {
         if (window.localStorage) {
             return window.localStorage.getItem(key);
-        }
-    },
-    pajx_loadDuodsuo: function () {
-        var dus = $("#ds-thread");
-        if ($(dus).length == 1) {
-            try {
-                var el = document.createElement('div');
-                el.setAttribute('data-thread-key', $(dus).attr("data-thread-key"));//必选参数
-                el.setAttribute('data-url', $(dus).attr("data-url"));
-                DUOSHUO.EmbedThread(el);
-                $(dus).html(el);
-            } catch (e) {
-                console.log(e);
-            }
         }
     },
     setBuildingTime: function () {

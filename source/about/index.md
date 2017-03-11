@@ -19,9 +19,12 @@ photos:
 
 #### 关于作者
 
-90后姓唐的程序猿(不是媛)，目前致力于`JavaScript`大法，`ReactNative`是目前的工作。鸡汤一站，请自取一瓢饮
+90后姓唐的程序猿(不是媛)，目前致力于`JavaScript`大法，`ReactNative`是目前的工作。鸡汤一站，请自取一篇饮
 
-> 忘了说，评论框偶尔可能犯懵逼，不要怪它，请重刷页面即可
+> 忘了说，评论框偶尔可能犯懵逼，不要怪它，请重刷页面就好
+
+![CodingLife](https://dn-coding-net-production-static.qbox.me/91d0106b-7774-4878-b72e-304fcf2059af.png)
+
 
 
 

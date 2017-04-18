@@ -58,11 +58,17 @@ category_map:
    资源: resource
 tag_map:
   iOS: iOS
-  ReactNative: RN
-  跨平台: CrossPlatform
-  博客: bloger
-  Mac必备工具: MacTools
+  hexo: hexo
+  swift: swift
+  golang: golang
   视角: views
+  生活: lifes
+  阅读: reading
+  网站: website
+  js大法: javascript
+  ReactNative: RN
+  Mac必备工具: MacTools
+  跨平台: CrossPlatform
 
 
 # Date / Time format

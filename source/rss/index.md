@@ -1,4 +1,4 @@
-title: RSS
+title: RSS，Are you ok ?
 author: 唐先森
 avatar: /images/favicon.png
 authorLink: https://www.tangkunyin.com
@@ -12,11 +12,11 @@ photos:
 	- /images/rssFeed-bg.jpg
 ---
 
-### 到了装逼的时刻，只是...咳咳，让你失望了，聚合阅读偶想后边不一定会有...
-
 ![rss-feed](/images/rssFeed-bg.jpg)
 
-## 补锅，偶搞了个这货，感兴趣自行关注，传送门如下：
+### 这个模块现在没有，以后也不一定会有，看到这里有没有觉得好~~污~~亏
+
+> 补锅，感兴趣可自行关注这货，传送门如下：
 
 ![readseek-qrcode](/img/2017/readseek-qrcode.jpg)
 

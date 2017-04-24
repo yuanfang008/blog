@@ -51,20 +51,21 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: 技术
+default_category: 前端
 category_map:
-   技术: tech
-   人文: humanity
+   前端: big-front-end
+   后台: server-side
+   设计: design
    资源: resource
 tag_map:
   iOS: iOS
   hexo: hexo
   swift: swift
   golang: golang
-  视角: views
-  生活: lifes
-  阅读: reading
+  sketch: sketch
+  zeplin: zeplin
   网站: website
+  后台: serverSide
   js大法: javascript
   ReactNative: RN
   Mac必备工具: MacTools

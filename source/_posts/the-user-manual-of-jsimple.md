@@ -5,7 +5,7 @@ avatar: /images/favicon.png
 authorLink: https://www.tangkunyin.com
 authorAbout: https://about.tangkunyin.com
 authorDesc: 一个写代码的「伪文人」
-categories: 技术
+categories: 资源
 tags:
 	- hexo
 	- 网站

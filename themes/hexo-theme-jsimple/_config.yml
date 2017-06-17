@@ -4,7 +4,7 @@ shortName: 说
 
 
 # full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
-fullHttps: true
+fullHttps: false
 
 # favicon and site master avatar
 favicon: /images/favicon.png
@@ -35,7 +35,7 @@ menu:
 coverTitle: 交流技术，畅谈人文
 coverDescription: 一个关注技术与人文的IT博客
 sinaWb: https://weibo.com/tangkunyin
-facebook: https://fackbook.com/tangkunyin
+facebook: https://facebook.com/tangkunyin
 github: https://github.com/tangkunyin
 
 

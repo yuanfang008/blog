@@ -38,7 +38,7 @@ photos:
 
 学名，猴斯特吐。推荐指数，三点五。对于谷歌、非死不可等网站有效，不是全网解决方案。效果也还不错
 
-[hosts](https://github.com/tangkunyin/DevShell)
+[hosts](https://github.com/tangkunyin/UsefullShells)
 
 
 

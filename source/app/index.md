@@ -13,6 +13,18 @@ comments: false
 
 ### 憋闹了，还没有爱蒲。博客写的差不多了，再考虑写个移动互联网....
 
+```java
+public static void main(String args[]) throws Exception {
+        
+    for (int i = 0; ; i++) {
+        Thread.sleep(1000);
+        System.out.println("嗯、写码，呵呵..." + i);
+    }
+
+}
+
+```
+
 fyiguhjnwkefnmwoeih68yuih4jnkrfewdfyugbijnk.wfww3f
 
 5jhyrtgve5jhytbgvef5grefvqwu6ejynhbvwer5jr5hb4gevgwh54uh3g4weab

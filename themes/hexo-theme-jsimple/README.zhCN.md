@@ -5,32 +5,31 @@
 
 **适用于Hexo的三栏简书式主题。支持响应式、站内搜索、多说评论、文章浏览统计以及白天和夜间模式**.
 
-- [**☞ 一睹为快**](https://shuoit.net) | [**For English Document click here**](https://github.com/tangkunyin/hexo-theme-jsimple/blob/master/README.md)
+[**☞ 一睹为快**](https://shuoit.net) | [**For English Document click here**](https://github.com/tangkunyin/hexo-theme-jsimple/blob/master/README.md)
 
 ![JSimple-iPhone-Landscape-Night-Demo](/source/images/JSimple-iPhone-Landscape-Night-Demo.jpg)
-
 
 <!--more-->
 
 ## 安装步骤
 
- 1. 从 GitHub 下载代码
+1. 从 GitHub 下载代码
 
- ```shell
- $ git clone https://github.com/tangkunyin/hexo-theme-jsimple themes/jsimple
- ```
- 2. 去主题中开启
+```shell
+$ git clone https://github.com/tangkunyin/hexo-theme-jsimple themes/jsimple
+```
+2. 去主题中开启
 
- 在`_config.yml`中更改 `theme` 字段为 `jsimple`.
- 
- 请在站点配置文件中，手动添加依赖： `"hexo-generator-json-content": "^2.2.0"` ，搜索会用到此依赖。
+在`_config.yml`中更改 `theme` 字段为 `jsimple`.
 
- 3. 更新主题
+请在站点配置文件中，手动添加依赖： `"hexo-generator-json-content": "^2.2.0"` ，搜索会用到此依赖。
 
- ```shell
- $ cd themes/jsimple
- $ git pull
- ```
+3. 更新主题
+
+```shell
+$ cd themes/jsimple
+$ git pull
+```
 
 
 ## 配置
@@ -53,29 +52,28 @@
 
 ```
 menu:
-    category1: 分类1
-    category2: 分类2
-    category3: 分类3
+   category1: 分类1
+   category2: 分类2
+   category3: 分类3
 ```
 	
-   			
-#### 3. 评论和统计在站点配置文件中，请按照下边的变量手动添加进去。
+  			
+#### 3. 统计在站点配置文件中，请按照下边的变量手动添加进去。
 
 ```
 
-## 评论仅支持Disqus，统计仅支持CNZZ，需要其他组件请自行替换
-disqus_shortname: your shortname
+## 统计仅支持CNZZ，需要其他组件请自行替换
 ## CNZZ count
 cnzz_siteid: your siteid
 
 ```
- 		
- 			
+		
+			
 ### Other config   			
 
 1. 封面图和封面信息的设置
 
-        有两种封面，分别是白天和夜间模式。对应的你只需要将主题文件夹下的相关图片换成你喜欢的就可以了，封面信息对应主题改成你的信息即可。
+       有两种封面，分别是白天和夜间模式。对应的你只需要将主题文件夹下的相关图片换成你喜欢的就可以了，封面信息对应主题改成你的信息即可。
 
 2. 首页文档展示顺序和展示数目
 
@@ -96,7 +94,7 @@ cnzz_siteid: your siteid
 		hexo n page about
 		```
 
-5. 社交信息
+5. 社交信息，支持：telegram,instagram,twitter,github,sinaWb,facebook,github，建议最多4项
 
 		sinaWb: 你的新浪微博地址
 		facebook: 你的脸书地址
@@ -118,7 +116,7 @@ cnzz_siteid: your siteid
 > 特别感谢 `iTimeTraveler` 和 `jiangmuzi`, 他们提供了原型 [Hipaper](https://github.com/iTimeTraveler/hexo-theme-hipaper)、 [JianShu](https://github.com/jiangmuzi/jianshu).
 
 
-## 乌谢
+## 鸣谢
 
 [Hexo](https://hexo.io)
 [Font Awesome](http://fontawesome.io)
@@ -126,5 +124,7 @@ cnzz_siteid: your siteid
 ## License
 
 JSimple is under the MIT license. See the [LICENSE](https://github.com/tangkunyin/hexo-theme-jsimple/blob/master/LICENSE) file for details.
+
+
 
 

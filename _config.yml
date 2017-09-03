@@ -112,8 +112,5 @@ backup:
     github: https://github.com/shuoit/blog.git,master
 
 # ------------- Third part private config in theme ----------------------
-# comment ShortName, you can choose only ONE to display.
-disqus_shortname: shuoit
-
 # CNZZ count
 cnzz_siteid: 1261190932

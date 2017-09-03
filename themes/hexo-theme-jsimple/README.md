@@ -38,7 +38,7 @@
 
 For a quick start, see my [Site backup](https://github.com/shuoit/blog) may be more convenient.
 
-### Important config
+### Important settings
 
 #### 1. fullHttps: Boolean value( `true` or `false`)
 
@@ -58,16 +58,13 @@ menu:
 #### 3. comment and  analytics config in your site _config.yml, please add them manually.
 
  ```
- ## comment support disqus only and analytics support cnzz only
- # comment ShortName, you can choose only ONE to display.
- disqus_shortname: your shortname
- # CNZZ count
- cnzz_siteid: your siteid
+    ## Aanalytics support cnzz only.Config it in your site yml file
+    cnzz_siteid: your siteId
  ```
    			
-### Other config   			
+### The other settings   			
 
-1. cover images config
+1. cover images setting
 
         There are two kinds of cover image. replace day and night in your theme images dir.
 
@@ -90,8 +87,12 @@ menu:
 		hexo n page about
 		```
 
-5. Social info config
+5. Social info settings. telegram,instagram,twitter,github,sinaWb,facebook,github are support.
 
+		telegram: http://t.me/codeist
+		instagram: https://www.instagram.com/coder.thomas/
+		twitter: https://twitter.com/tangkunyin
+		github: https://github.com/tangkunyin
 		sinaWb: https://weibo.com/tangkunyin
 		facebook: https://fackbook.com/tangkunyin
 		github: https://github.com/tangkunyin

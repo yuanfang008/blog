@@ -23,7 +23,9 @@ photos:
 
 ### 主题概况
 
-大概介绍下，主题的统计用的`CNZZ`，评论组件用的`Disqus`，搜索是`Google InsightSearch`，大致风格是简书网的前身。对于统计和评论，你可以直接改主题的对应文件，替换就好了，只是考虑到统计和评论信息为私有信息，因此把那两项配置放到了站点配置文件中，如果你为此感到难受，请自己放到主题配置文件里就好。多余的不用纠结。
+大概介绍下，主题的统计用的`CNZZ`，评论组件用的`Disqus`，搜索是`Google InsightSearch`，大致风格是简书网的前身。对于统计和评论，你可以直接改主题的对应文件，替换就好了，只是考虑到统计为私有信息，因此把配置放到了站点配置文件中，如果你为此感到难受，请自己放到主题配置文件里就好。多余的不用纠结。
+
+> 主题发布这段时间，感谢热心网友提PR改进意见，现在主题已经支持**Gitment**，**代码高亮**也显示的比较顺眼了。由于个人原因，博文和主题前半年关注较少，再次一并感谢所有对开源做出贡献的朋友们，谢谢你们。后边，咱们一起装逼，一起飞....
 
 当你下载了这份主题，改好站点配置后，第一个工作不应该是`hexo g`或`hexo s`运行演示，因为这样你一定会遇到错误，要完整的运行，你需要手动配置如下项目：
 
@@ -73,9 +75,52 @@ tag_map:
   生活: life
 ```
 
-#### 3、到这里，新建的文章写好，就能预览了
+
+#### 3、站点左侧导航配置
+
+```
+# 便于动态配置导航，最新版把左导航写成配置方式了。注意uri前边的"-"，这里是object类型，内层包了数组
+leftPagesMenu:
+- uri: pageName    // 这个是创建layout为page类型的页面名称，简而言之，就是独立页面名称
+  title: navName	  // 故名意思，导航名称，这在大屏幕时体现 
+  faName: fa-wifi  // FontAwesome样式名称，最新主题使用了4.7.0，请参考http://fontawesome.io/icons/
+```
 
 
+
+#### 4、社交信息
+
+最新一版支持了telegram, instagram, slack, twitter, github, sinaWb, facebook 7中，你要不嫌挤，可以全部配置上
+
+
+#### 5、关于搜索功能
+
+相对于静态博客而言，本站所使用的搜索功能，我个人觉得还是相当赞的，但是这并不意味着需要很复杂的配置，来一起看看你的`package.json`依赖吧：
+
+```
+"dependencies": {
+    "hexo": "^3.2.2",
+    "hexo-git-backup": "^0.1.2",
+    "hexo-renderer-ejs": "^0.2.0",
+    "hexo-renderer-marked": "^0.2.11",
+    "hexo-renderer-stylus": "^0.3.1",
+    "hexo-server": "^0.2.0",
+    "hexo-deployer-git": "0.2.0",
+    "hexo-generator-archive": "^0.1.4",
+    "hexo-generator-category": "^0.1.3",
+    "hexo-generator-index": "^0.2.0",
+    "hexo-generator-tag": "^0.2.0",
+    "hexo-generator-json-content": "^2.2.0"
+  }
+```
+
+请注意最后一行，那是用来生成检索数据`content.json`用的，这个文件在你的`public`下，当你无法使用搜索时，请务必检查依赖以及是否生成了数据文件。
+
+#### 6、关于CNAME多提一嘴
+
+有朋友提`Issues`说，`每次deploy之后，相应的CNAME文件就丢失了，难道每次deploy都需要重新创建CNAME文件，这个怎么解决啊？`
+
+这个只是你把`CNAME`文件放错位置了而已，解决办法就是**把CNAME文件放到主题的source文件夹中，这样就不会丢了**
 
 
 

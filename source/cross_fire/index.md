@@ -26,11 +26,11 @@ photos:
 
 ### Top2
 
-#### GreenVPN
+#### ShadowsocksX-NG
 
-学名你说叫啥就是啥吧，推荐指数，五星。不限流量，注册个账号每天签到即可，pc、mobile均可使用，速度快、稳定
+相对来讲，目前比较合适的了，需要自己有梯子
 
-[GreenVPN](https://www.greenjsq.me/index.php)
+[ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG/releases)
 
 ### Top3
 

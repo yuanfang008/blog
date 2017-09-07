@@ -31,11 +31,11 @@ photos:
 
 #### 安装使用啥的，官方文档说的很清楚，以下为我使用笔记
 
-1. 升级版本：
+1 升级版本：
 
 > npm update -g nodeppt
 
-2. 创建一个文档：
+2 创建一个文档：
 
 ```
 // a. 执行如下命令
@@ -51,7 +51,7 @@ Success：hello.md, please write your slide content
 // c. 使用MWeb之类的MD工具开始愉快的编写ppt吧~
 ```
 
-3. 启动预览
+3 启动预览
 
 ```shell
 // 其中，-w表示watch模式，即：改动会时时生效，无需手动刷新浏览器。有没有很*的样子
@@ -60,7 +60,7 @@ nodeppt start -w -p 9090
 
 #### 将写好的PPT作为gitpages服务发布
 
-1. 导出全部，包括nodeppt的js、img和css文件夹到执行目录下，如：docs
+1 导出全部，包括nodeppt的js、img和css文件夹到执行目录下，如：docs
 
 ```
 nodeppt generate . docs -a
@@ -69,13 +69,13 @@ nodeppt generate . docs -a
 > 目前发现两个问题，首先生成docs目录里，还有一个docs目录，在接着执行命令，还会继续生成。直接删掉不需要的目录；其次第一步生成的docs目录用了`Git`初始化，这就是说如果你的根目录已经用了Git管理，再套一层会导致推送到GitHub对应的目录没有文件，而`git status`会出现：**modified:   docs (modified content, untracked content)**。解决办法还是删掉`.git`和`.gitignore`
 
 
-2. 有了docs目录后，本地打开里面的`index.html`，看看样式对不对，没问题之后再进行第三步
+2 有了docs目录后，本地打开里面的`index.html`，看看样式对不对，没问题之后再进行第三步
 
-3. 在GitHub Pages的`Source`处，选择：`Use only the /docs folder for GitHub Pages`
+3 在GitHub Pages的`Source`处，选择：`Use only the /docs folder for GitHub Pages`
 
-4. 访问配置好的域名，如`http://ppt.shuoit.net`，就可以远程访问ppt了，这并不需要你在任何平台安装office全家桶
+4 访问配置好的域名，如`http://ppt.shuoit.net`，就可以远程访问ppt了，这并不需要你在任何平台安装office全家桶
 
-5. 剩下的工作就是发挥创造力，码字，做交互。每次写完重复以上步骤就可以使得ppt更新
+5 剩下的工作就是发挥创造力，码字，做交互。每次写完重复以上步骤就可以使得ppt更新
 
 
 

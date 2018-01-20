@@ -11,7 +11,7 @@ photos:
 comments: false
 ---
 
-### 憋闹了，还没有爱蒲。博客写的差不多了，再考虑写个移动互联网....
+### 憋闹了，还没App。网页写的差不多了，再考虑写移动互联网....
 
 ```java
 public static void main(String args[]) throws Exception {

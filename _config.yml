@@ -18,7 +18,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://shuoit.net
 root: /
-permalink: :category/:title.html
+permalink: :category/:entitle/:timestamp.html
 permalink_defaults:
   lang: en
 
@@ -53,9 +53,9 @@ highlight:
 # Category & Tag
 default_category: 前端
 category_map:
-   前端: big-front-end
-   后台: server-side
-   设计: design
+   前端: front-end
+   后台: back-end
+   设计: product-design
    资源: resource
 tag_map:
   iOS: iOS

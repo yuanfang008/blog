@@ -1,4 +1,5 @@
 title: {{ title }}
+entitle: ''
 date: {{ date }}
 author: 唐先森
 avatar: /images/favicon.png

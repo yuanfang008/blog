@@ -1,5 +1,6 @@
 title: {{ title }}
-date: {{ date }} 
+entitle: ''
+date: {{ date }}
 author: 唐先森
 avatar: /images/favicon.png
 authorLink: https://www.tangkunyin.com

@@ -1,4 +1,6 @@
 title: JSimple主题用户指南
+entitle: jsimple-usage
+timestamp: 1492480198
 date: 2017-04-18 09:49:58
 author: 唐先森
 avatar: /images/favicon.png

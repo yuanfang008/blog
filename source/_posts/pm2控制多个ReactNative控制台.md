@@ -10,7 +10,7 @@ timestamp: 1528026635
 date: 2018-06-03 19:50:35
 tags:
     - ReactNative
-    - js大法
+    - JavaScript
     - pm2
 keywords: ReactNative, npm, nodejs
 description: 来自2018.1.18的笔记：pm2控制多个ReactNative控制台。当前前提是得先改了RN默认端口。

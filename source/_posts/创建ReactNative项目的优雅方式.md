@@ -10,7 +10,7 @@ timestamp: 1528026020
 date: 2018-06-03 19:40:20
 tags:
     - ReactNative
-    - js大法
+    - JavaScript
 keywords: ReactNative, npm, nodejs
 description: 来自2018.1.19的笔记：创建ReactNative项目的优雅方式
 photos:

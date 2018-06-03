@@ -10,7 +10,7 @@ timestamp: 1528027974
 date: 2018-06-03 20:12:54
 tags:
     - Vue
-    - js大法
+    - JavaScript
 keywords: Vue
 description: 来自2018.5.12的笔记：Vue学习手记。高手请有默契的绕道...
 photos:

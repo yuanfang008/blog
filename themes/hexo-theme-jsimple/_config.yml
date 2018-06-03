@@ -30,7 +30,7 @@ menu:
    前端: front-end
    后台: back-end
    设计: product-design
-   资源: resource
+   其他: others
 
 # Left menu of single pages settings
 ## Notice: faName is FontAwesome style name
@@ -71,7 +71,7 @@ gitment:
 
 ## Comments settings.You can choose only ONE to display.
 # disqus shortName,
-disqus_shortname: shuoit
+disqus_shortname: shuoit 
 
 # Analytics
 tentcentAnalyticsId: 65036274

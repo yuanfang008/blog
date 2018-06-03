@@ -56,7 +56,7 @@ category_map:
    前端: front-end
    后台: back-end
    设计: product-design
-   资源: resource
+   其他: others
 tag_map:
   iOS: iOS
   hexo: hexo

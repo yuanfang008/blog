@@ -34,10 +34,9 @@ comments: false
 [VIM](https://vim-adventures.com/)
 [CodeTank](http://codetank.alloyteam.com/)
 
-`开车`群
-
-[老表](http://t.me/laobiao)
 
 `公众`号
 
-没有链接，请直接关注微信公众号：`小道消息`、`MacTalk`等等
+没有链接，请直接关注微信公众号：`涔汐(zhangcenxi99)`、`小道消息`、`MacTalk`等等
+
+

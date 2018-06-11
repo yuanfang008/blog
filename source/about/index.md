@@ -29,10 +29,12 @@ comments: false
 
 #### 关于作者
 
-喜欢周杰伦歌曲的90后程序猿，就职于粗粮厂。目前致力于`JavaScript`大法，`ReactNative`是目前的工作。技汤一站，请自取一篇饮
+斜杠中年、文字控、周杰伦迷，就职于粗粮厂的90后程序猿。目前致力于`JavaScript`大法，`ReactNative`是目前的工作。鸡汤一站，请自取一篇饮
 
 > 如果您遇到麻烦或对本站有疑问，请在本站找到那个白色❓号并点击查看
 
 ### 没时间再解释了，赶紧上车...
 
 ![CodingLife](https://dn-coding-net-production-static.qbox.me/91d0106b-7774-4878-b72e-304fcf2059af.png)
+
+

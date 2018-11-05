@@ -66,6 +66,7 @@ tag_map:
   网站: website
   后端: serverSide
   JavaScript: javascript
+  TypeScript: typescript
   ReactNative: RN
   Mac必备工具: MacTools
   跨平台: CrossPlatform

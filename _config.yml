@@ -51,11 +51,10 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: 前端
+default_category: 技术
 category_map:
-   前端: front-end
-   后台: back-end
-   设计: product-design
+   技术: tech-notes
+   人文: humanities
    其他: others
 tag_map:
   iOS: iOS
@@ -65,7 +64,7 @@ tag_map:
   sketch: sketch
   zeplin: zeplin
   网站: website
-  后台: serverSide
+  后端: serverSide
   JavaScript: javascript
   ReactNative: RN
   Mac必备工具: MacTools

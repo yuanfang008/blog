@@ -96,8 +96,6 @@ theme: hexo-theme-jsimple
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: 
-    coding: git@git.coding.net:nook/nook.coding.me.git
-  branch: master
-  message: blog update
+- type: git
+  repo: git@git.coding.net:nook/nook.coding.me.git
+  branch: coding-pages

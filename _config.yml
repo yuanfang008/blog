@@ -96,16 +96,8 @@ theme: hexo-theme-jsimple
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-- type: git
+  type: git
   repo: 
     coding: git@git.coding.net:nook/nook.coding.me.git
   branch: master
   message: blog update
-
-# Backup settings see:https://github.com/coneycode/hexo-git-backup
-backup:
-  type: git
-  message: backup my blog of https://shuoit.net
-  repository:
-    coding: https://git.coding.net/shuoit/blog.git,master
-    github: https://github.com/shuoit/blog.git,master

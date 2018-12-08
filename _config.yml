@@ -97,11 +97,9 @@ theme: hexo-theme-jsimple
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://git.coding.net/shuoit/shuoit.git
-  branch: coding-pages
-- type: git
-  repo: https://tangkunyin@github.com/shuoit/shuoit.github.com.git
+  repo: git@git.coding.net:nook/nook.coding.me.git
   branch: master
+  message: blog update
 
 # Backup settings see:https://github.com/coneycode/hexo-git-backup
 backup:
